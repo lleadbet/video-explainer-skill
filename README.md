@@ -2,7 +2,7 @@
   <img src="docs/media/header.png" alt="Explainer videos, written as code. Four frames from the explainer video with their timecodes." width="100%">
 </p>
 
-# video-explainer
+# video-explainer-skill
 
 A Claude skill that turns a topic into a narrated explainer video. Claude writes a storyboard, builds each scene as a small web page animated with GSAP, checks its own work, adds a voiceover, and renders everything frame by frame to MP4. No video-generation model is involved: every frame is a screenshot of a web page.
 
@@ -10,15 +10,7 @@ A Claude skill that turns a topic into a narrated explainer video. Claude writes
 
 The video below was made with this skill, about this skill. It's 82 seconds, narrated by Gemini TTS, and rendered in 68 seconds.
 
-<!--
-  For an inline player with sound: edit this README on GitHub, drag docs/media/explainer.mp4
-  into the editor, and replace this block with the https://github.com/user-attachments/... URL it inserts.
--->
-<p align="center">
-  <a href="docs/media/explainer.mp4"><img src="docs/media/poster.png" alt="Play the explainer video (MP4, 82 seconds, with narration)" width="100%"></a>
-</p>
-
-<p align="center"><a href="docs/media/explainer.mp4"><b>Play the video (MP4, 82 s, with sound)</b></a></p>
+https://github.com/user-attachments/assets/0d7af3d0-73de-46db-9dc3-f555367478e2
 
 Every scene is a GSAP timeline held paused. Seeking it to any moment reproduces that frame exactly, which is what makes frame-by-frame rendering possible:
 
