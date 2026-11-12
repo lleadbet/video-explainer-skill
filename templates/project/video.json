@@ -1,0 +1,23 @@
+{
+  "title": "Untitled explainer",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "seed": 1,
+  "transition": "fade",
+  "theme": {},
+  "scenes": [
+    {
+      "id": "title",
+      "duration": 5,
+      "narration": "Here is the one-sentence promise of this video.",
+      "visual": "Title card: big headline, small subtitle underneath."
+    },
+    {
+      "id": "three-points",
+      "duration": 9,
+      "narration": "There are three things to know. First, this. Second, that. And third, the thing that ties them together.",
+      "visual": "Heading, then three cards appear in sync with each point; the third gets highlighted."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "video-explainer header",
+  "width": 1920,
+  "height": 640,
+  "fps": 30,
+  "transition": "cut",
+  "theme": {
+    "bg": "#E7ECF3",
+    "surface": "#F4F7FB",
+    "surface2": "#C3CCDA",
+    "fg": "#16213E",
+    "muted": "#5D6B85",
+    "accent": "#2448D6",
+    "accent2": "#FFD84A",
+    "font": "'Bricolage Grotesque Variable', system-ui, sans-serif"
+  },
+  "scenes": [
+    { "id": "header", "duration": 1, "narration": "", "visual": "README banner: headline left, four real frames from the explainer as a contact sheet right." }
+  ]
+}

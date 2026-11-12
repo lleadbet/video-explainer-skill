@@ -1,0 +1,51 @@
+{
+  "title": "Kubernetes in a minute",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "seed": 7,
+  "transition": "fade",
+  "voice": {
+    "model": "elevenlabs/eleven-v4",
+    "voice": "george"
+  },
+  "theme": {},
+  "scenes": [
+    {
+      "id": "title",
+      "duration": "auto",
+      "narration": "You have containers. Now you need to run hundreds of them, across many machines, without babysitting any of them.",
+      "visual": "Title 'Kubernetes'. 'hundreds of them' (~3s): a field of small container squares pops in. 'many machines' (~4.6s): machine outlines appear around groups of them."
+    },
+    {
+      "id": "the-problem",
+      "duration": "auto",
+      "narration": "Doing that by hand doesn't scale. Servers fail, traffic spikes, and new versions need to ship. Kubernetes automates all of it.",
+      "visual": "Three servers with containers. 'Servers fail' (~2.4s): one goes red and offline. 'traffic spikes' (~3.2s): traffic badge. 'new versions' (~4.2s): v2 badge. 'Kubernetes automates' (~6s): problems dim, headline with marker on 'automates'."
+    },
+    {
+      "id": "cluster",
+      "duration": "auto",
+      "narration": "A Kubernetes cluster has a control plane, which makes decisions, and worker nodes, which run your applications. Containers run inside pods, the smallest unit Kubernetes manages.",
+      "visual": "Cluster outline. 'control plane' (~1.2s): control plane box with its components. 'worker nodes' (~3.6s): three nodes, arrows from control plane. 'run your applications' (~4.8s): pods fill the nodes. 'Containers run inside pods' (~6s): one pod highlighted and labelled, others dim."
+    },
+    {
+      "id": "desired-state",
+      "duration": "auto",
+      "narration": "You don't give it commands. You declare the state you want, like three copies of your app. If a pod crashes, Kubernetes notices the difference and starts a replacement.",
+      "visual": "Deployment YAML on the left. 'declare the state' (~2s) YAML appears; 'three copies' (~4.8s) replicas line highlighted, three pods appear with desired/running counters. 'pod crashes' (~7.2s) one pod dies, running drops to 2 in red. 'starts a replacement' (~10.4s) new pod pops in, running back to 3."
+    },
+    {
+      "id": "services",
+      "duration": "auto",
+      "narration": "Pods come and go, so a service gives them one stable address and spreads traffic across whichever pods are healthy.",
+      "visual": "Pods on the right, one swaps out ('come and go'). 'service' (~1.6s): Service box with a stable DNS name. 'spreads traffic' (~4.4s): requests flow users \u2192 service \u2192 pods round-robin. 'healthy' (~6.8s): one pod goes unhealthy and traffic skips it."
+    },
+    {
+      "id": "recap",
+      "duration": "auto",
+      "narration": "Nodes run pods, you declare what you want, and Kubernetes keeps it that way.",
+      "visual": "Three cards popping in sync: 'Nodes run pods', 'You declare the state', 'Kubernetes keeps it that way'."
+    }
+  ]
+}

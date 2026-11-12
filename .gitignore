@@ -1,0 +1,4 @@
+node_modules/
+out/
+# Example narration clips are regenerable (narration.mjs status); keep the scene code.
+examples/*/audio/

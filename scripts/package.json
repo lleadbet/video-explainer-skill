@@ -1,0 +1,13 @@
+{
+  "name": "video-explainer-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Render scripts for the video-explainer skill",
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "gsap": "^3.15.1",
+    "playwright": "^1.65.0"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "title": "How DNS works",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "seed": 1,
+  "transition": "fade",
+  "voice": {
+    "model": "google/gemini-3.8-flash-tts",
+    "voice": "Charon",
+    "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace."
+  },
+  "theme": {},
+  "scenes": [
+    {
+      "id": "title",
+      "duration": "auto",
+      "narration": "Every time you open a website, your computer first has to answer one question: where is it?",
+      "visual": "Title card 'How DNS works', subtitle; then the question 'where is it?' appears."
+    },
+    {
+      "id": "names-to-numbers",
+      "duration": "auto",
+      "narration": "Computers find each other by IP address, but people remember names. DNS is the phone book that translates one into the other.",
+      "visual": "A browser address bar types example.com; an arrow labelled DNS converts it into an IP address."
+    },
+    {
+      "id": "the-journey",
+      "duration": "auto",
+      "narration": "Your request goes to a resolver, usually run by your internet provider. The resolver asks a root server, which points it to the dot-com servers, which point it to the domain's own authoritative server. That server has the answer.",
+      "visual": "Network diagram: laptop, resolver, then root / .com / authoritative servers. Packets travel each hop; referrals come back orange, the final answer green."
+    },
+    {
+      "id": "caching",
+      "duration": "auto",
+      "narration": "Doing that every time would be slow, so answers are cached for as long as the record's time to live allows. Repeat lookups take milliseconds.",
+      "visual": "Bar chart of lookup time: full lookup vs resolver cache vs local cache."
+    },
+    {
+      "id": "try-it",
+      "duration": "auto",
+      "narration": "You can watch it yourself with the dig command. The answer section shows the address, and the TTL says how long it can be cached.",
+      "visual": "Terminal: dig example.com typed out, output appears, answer line highlighted, TTL called out."
+    },
+    {
+      "id": "recap",
+      "duration": "auto",
+      "narration": "So: ask a resolver, follow the referrals, and cache the answer. That's DNS.",
+      "visual": "Three steps in a row joined by arrows, then 'That's DNS.'"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "scenes": {
+    "opening": {
+      "file": "audio/opening.1bef45c20b.mp3",
+      "hash": "1bef45c20b",
+      "duration": 7.608,
+      "text": "This is a Claude skill for making explainer videos. No video model is involved. Every frame you're watching is a web page.",
+      "speech": [
+        0.288,
+        7.218
+      ],
+      "pauses": [
+        [
+          2.898,
+          3.237
+        ],
+        [
+          4.746,
+          5.154
+        ],
+        [
+          6.336,
+          6.505
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    },
+    "storyboard": {
+      "file": "audio/storyboard.5eec1a0fac.mp3",
+      "hash": "5eec1a0fac",
+      "duration": 10.416,
+      "text": "It starts with a storyboard. Claude plans each scene, with its narration and what should be on screen, then writes every scene as a small JavaScript module.",
+      "speech": [
+        0.235,
+        10.033
+      ],
+      "pauses": [
+        [
+          1.674,
+          2.331
+        ],
+        [
+          3.694,
+          3.916
+        ],
+        [
+          6.273,
+          6.563
+        ],
+        [
+          6.645,
+          6.81
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    },
+    "timeline": {
+      "file": "audio/timeline.6edaeaacc6.mp3",
+      "hash": "6edaeaacc6",
+      "duration": 12.216,
+      "text": "Scenes draw with HTML and SVG, and animate on GSAP timelines. The timelines stay paused, so any moment can be recreated exactly, just by seeking to it.",
+      "speech": [
+        0.244,
+        11.82
+      ],
+      "pauses": [
+        [
+          2.82,
+          3.189
+        ],
+        [
+          5.489,
+          6.106
+        ],
+        [
+          7.546,
+          7.7
+        ],
+        [
+          10.569,
+          10.892
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    },
+    "render": {
+      "file": "audio/render.827a14cc14.mp3",
+      "hash": "827a14cc14",
+      "duration": 13.536,
+      "text": "To render, Playwright drives headless Chromium. It seeks one frame, takes a screenshot, and pipes it into ffmpeg. Four browsers work in parallel, so a minute of video renders in about a minute.",
+      "speech": [
+        0.217,
+        13.087
+      ],
+      "pauses": [
+        [
+          0.791,
+          1.042
+        ],
+        [
+          3.007,
+          3.371
+        ],
+        [
+          4.556,
+          4.872
+        ],
+        [
+          5.705,
+          6.094
+        ],
+        [
+          7.896,
+          8.446
+        ],
+        [
+          10.08,
+          10.405
+        ],
+        [
+          11.645,
+          11.81
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    },
+    "review": {
+      "file": "audio/review.6bea0db89e.mp3",
+      "hash": "6bea0db89e",
+      "duration": 9.744,
+      "text": "Before the final render, Claude checks its own work. A linter flags layout and timing mistakes, and a contact sheet shows the whole video at a glance.",
+      "speech": [
+        0.241,
+        9.343
+      ],
+      "pauses": [
+        [
+          1.68,
+          1.92
+        ],
+        [
+          3.179,
+          3.725
+        ],
+        [
+          6.202,
+          6.532
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    },
+    "voice": {
+      "file": "audio/voice.987db9c68c.mp3",
+      "hash": "987db9c68c",
+      "duration": 12.048,
+      "text": "The voiceover comes from OpenRouter, using models like ElevenLabs or Gemini. Pauses measured in the audio let each animation land on the word it shows, like this one.",
+      "speech": [
+        0.24,
+        11.616
+      ],
+      "pauses": [
+        [
+          2.23,
+          2.569
+        ],
+        [
+          5.048,
+          5.818
+        ],
+        [
+          7.461,
+          7.835
+        ],
+        [
+          10.7,
+          11.167
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    },
+    "recap": {
+      "file": "audio/recap.9f00662042.mp3",
+      "hash": "9f00662042",
+      "duration": 7.368,
+      "text": "Write the storyboard, render the frames, add a voice. Ask Claude for an explainer, and this is what you get.",
+      "speech": [
+        0.277,
+        6.978
+      ],
+      "pauses": [
+        [
+          1.389,
+          1.627
+        ],
+        [
+          2.675,
+          3.032
+        ],
+        [
+          3.71,
+          4.241
+        ],
+        [
+          5.707,
+          5.976
+        ]
+      ],
+      "model": "google/gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace.",
+      "speed": null
+    }
+  }
+}

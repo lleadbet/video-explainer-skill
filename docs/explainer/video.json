@@ -1,0 +1,78 @@
+{
+  "title": "video-explainer: how it works",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "seed": 3,
+  "transition": "fade",
+  "overlay": "scenes/_overlay.js",
+  "voice": {
+    "model": "google/gemini-3.8-flash-tts",
+    "voice": "Charon",
+    "instructions": "Warm, clear explainer narrator. Friendly and curious, measured pace."
+  },
+  "theme": {
+    "bg": "#E7ECF3",
+    "surface": "#F4F7FB",
+    "surface2": "#C3CCDA",
+    "fg": "#16213E",
+    "muted": "#5D6B85",
+    "accent": "#2448D6",
+    "accent2": "#FFD84A",
+    "accent3": "#16213E",
+    "accent4": "#FFD84A",
+    "danger": "#D9362B",
+    "font": "'Bricolage Grotesque Variable', system-ui, sans-serif"
+  },
+  "scenes": [
+    {
+      "id": "opening",
+      "label": "Opening",
+      "duration": "auto",
+      "narration": "This is a Claude skill for making explainer videos. No video model is involved. Every frame you're watching is a web page.",
+      "visual": "Condensed two-line headline. 'Every frame' (~4s): a pencil note and arrow point at the running timecode. 'web page': browser chrome with the render URL slides in above the headline."
+    },
+    {
+      "id": "storyboard",
+      "label": "Storyboard",
+      "duration": "auto",
+      "narration": "It starts with a storyboard. Claude plans each scene, with its narration and what should be on screen, then writes every scene as a small JavaScript module.",
+      "visual": "Left: a video.json scene entry. Right: three sketched storyboard panels draw themselves. Narration and visual lines get highlighted as they're named. 'JavaScript module': a scene file name appears under each panel."
+    },
+    {
+      "id": "timeline",
+      "label": "Timeline",
+      "duration": "auto",
+      "narration": "Scenes draw with HTML and SVG, and animate on GSAP timelines. The timelines stay paused, so any moment can be recreated exactly, just by seeking to it.",
+      "visual": "Top: a demo square and dot. Bottom: a timeline track with three tween bars and a playhead. The playhead sweeps and drives the demo. 'stay paused': it stops. 'seeking to it': it jumps to three times and the demo snaps to match, each jump tagged seek(t)."
+    },
+    {
+      "id": "render",
+      "label": "Render",
+      "duration": "auto",
+      "narration": "To render, Playwright drives headless Chromium. It seeks one frame, takes a screenshot, and pipes it into ffmpeg. Four browsers work in parallel, so a minute of video renders in about a minute.",
+      "visual": "Pipeline left to right: Chromium, a moving film strip of frames, ffmpeg, video.mp4. 'Four browsers': Chromium becomes four stacked workers and the strip speeds up. 'about a minute': the measured figure, 1,950 frames in 49 seconds."
+    },
+    {
+      "id": "review",
+      "label": "Review",
+      "duration": "auto",
+      "narration": "Before the final render, Claude checks its own work. A linter flags layout and timing mistakes, and a contact sheet shows the whole video at a glance.",
+      "visual": "Left: lint output with two warnings highlighted. Right: a contact sheet grid fills in; one tile is outlined as a fault, then fixed."
+    },
+    {
+      "id": "voice",
+      "label": "Voice",
+      "duration": "auto",
+      "narration": "The voiceover comes from OpenRouter, using models like ElevenLabs or Gemini. Pauses measured in the audio let each animation land on the word it shows, like this one.",
+      "visual": "Model names appear. The real waveform of this narration draws, with a playhead following the voice. 'Pauses measured': the gaps are highlighted. 'like this one': a highlighter sweeps over those exact words."
+    },
+    {
+      "id": "recap",
+      "label": "Recap",
+      "duration": "auto",
+      "narration": "Write the storyboard, render the frames, add a voice. Ask Claude for an explainer, and this is what you get.",
+      "visual": "Three steps in sequence, popping on each phrase. Then the closing line and the repo name."
+    }
+  ]
+}

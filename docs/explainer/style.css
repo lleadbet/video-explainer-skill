@@ -1,0 +1,29 @@
+/* Storyboard-paper look for the README video. Theme tokens live in video.json. */
+@import url('/__vendor/@fontsource-variable/bricolage-grotesque/wdth.css');
+
+.scene { font-family: var(--font); }
+
+/* Condensed display type: the headline is the image. */
+.display { font-size: 150px; font-weight: 780; font-stretch: 75%; line-height: 0.92; letter-spacing: -0.01em; }
+.h1 { font-stretch: 80%; font-weight: 760; letter-spacing: -0.01em; }
+.h2 { font-stretch: 85%; font-weight: 720; letter-spacing: 0; }
+.h3 { font-weight: 640; }
+.label { text-transform: none; letter-spacing: 0; font-size: 28px; font-weight: 500; color: var(--muted); }
+
+/* Storyboard panels: thin ink rule, near-square corners. */
+.card {
+  background: var(--surface);
+  border: 2px solid var(--surface2);
+  border-radius: 4px;
+}
+
+/* Code reads as a terminal printed on the board. */
+.code { background: var(--fg); color: #E7ECF3; border-radius: 4px; }
+.code .tok-k { color: #9DB2FF; }
+.code .tok-s { color: #FFD84A; }
+.code .tok-n { color: #FFD84A; }
+.code .tok-c { color: #8A97B0; }
+
+.pencil { stroke: var(--muted); fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.ink { color: var(--fg); }
+.note { font-size: 34px; font-weight: 500; color: var(--accent); font-stretch: 90%; }
